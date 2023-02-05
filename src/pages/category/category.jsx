@@ -15,6 +15,7 @@ import UpdateForm from './update-form'
 
 /*
 商品分类路由
+Card + Table
  */
 export default class Category extends Component {
 
@@ -91,6 +92,7 @@ export default class Category extends Component {
    */
   showSubCategorys = (category) => {
     // 更新状态
+    // 设置对象方式并不是立即更新, 需要通过callback执行
     this.setState({
       parentId: category._id,
       parentName: category.name
@@ -254,7 +256,7 @@ export default class Category extends Component {
     return (
       <Card title={title} extra={extra}>
         <Table
-          bordered
+          bordered={true}
           rowKey='_id'
           loading={loading}
           dataSource={parentId==='0' ? categorys : subCategorys}
