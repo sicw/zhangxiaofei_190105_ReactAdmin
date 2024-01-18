@@ -1,3 +1,9 @@
+# day00
+启动mongo docker
+启动admin-server-final
+启动npm start
+user pw: admin,admin
+
 # day01
 ## 1. 项目开发准备
     1). 描述项目
@@ -493,4 +499,3 @@
         b. 如果当前item是公开的
         c. 当前用户有此item的权限: key有没有menus中
         d. 如果当前用户有此item的某个子item的权限
-    
